@@ -37,8 +37,11 @@ NUMBER_OF_SAMPLES = 7000
 STEP = 0.1
 LAMBDA = 0.9
 ```
+
 `NUMBER_OF_SAMPLES` - How many tries you are willing to make.
+
 `STEP` - size of a RRT step.
+
 `LAMBDA` - probability to choose your sample function over random sampling.
 
 3. Create start node and put it inside a list. Define your goal coordinates.
@@ -73,7 +76,7 @@ nodes, sampled_points, status = rrt_mpf(nodes=nodesRRT,
 The `result` will contain:
 
 - The list of nodes representing the tree of a solution.
-You can find the path from goal to start through `parentNode`s connections.
+You can find the path from goal to start through `parentNode`'s connections.
 
 - Coordinates of the sampled points during the run.
 
@@ -89,7 +92,7 @@ The pseudocode:
 
 ![A star](static/code.png)
 
-### Example Of Sampling Function
+### Example Of A Sampling Function
 
 ```python
 def sample_MPF_point(nodesAstar, mapX_max, mapX_min, mapY_max, mapY_min):
