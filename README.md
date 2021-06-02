@@ -73,14 +73,14 @@ nodes, sampled_points, status = rrt_mpf(nodes=nodesRRT,
                                         nodesAstar=[])
 ```
 
-The `result` will contain:
+The returned values are:
 
-- The list of nodes representing the tree of a solution.
+- `nodes`: The list of nodes representing the tree of a solution.
 You can find the path from goal to start through `parentNode`'s connections.
 
-- Coordinates of the sampled points during the run.
+- `sampled_points`: Coordinates of the sampled points during the run.
 
-- Status of a search (`success` - path found, `failure` - path not found).
+- `status`: Status of a search (`success` - path found, `failure` - path not found).
 
 ## Example of a result plot:
 
